@@ -7,6 +7,9 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .initialDuration {
@@ -16,9 +19,14 @@
 
 .details {
   margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .timeLeft {
+  flex-grow: 1;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -29,4 +37,20 @@
   font-family: 'ZCOOL QingKe HuangYou', monospace;
   font-size: 1.75rem;
   color: #777;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.start {
+  padding: 0.5rem 0.75rem;
+  background-color: forestgreen;
+}
+
+.delete {
+  padding: 0.25rem 0.5rem;
+  background-color: crimson;
 }
